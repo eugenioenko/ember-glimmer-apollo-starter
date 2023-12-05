@@ -1,0 +1,21 @@
+overwrite: true
+hooks:
+  afterAllFileWrite:
+    - prettier --write
+schema: [
+  'https://graphqlzero.almansi.me/api',
+]
+documents: 'app/**/*.{graphql,ts}'
+generates:
+  types/graphqlzero-api/index.d.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+  app/utils/gql-operations.ts:
+    plugins:
+      - named-operations-object
+    config:
+      identifierName: namedOperations
+  tests/mocks/schema.graphql:
+    plugins:
+      - schema-ast

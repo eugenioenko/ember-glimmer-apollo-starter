@@ -1,0 +1,13 @@
+<select {{on "input" this.onUserIdChange}}>
+  {{#each this.userIds as |id|}}
+    <option value={{id}}>{{id}}</option>
+  {{/each}}
+</select>
+
+{{#if this.query.loading}}
+  loading...
+{{else if this.query.error}}
+  {{this.query.error}}
+{{else if this.query.data}}
+  {{this.query.data.user.name}}
+{{/if}}

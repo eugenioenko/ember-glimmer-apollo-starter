@@ -1,0 +1,58 @@
+# unconventional js
+/blueprints/*/files/
+/vendor/
+
+# compiled output
+/tmp/
+
+# dependencies
+/bower_components/
+/node_modules/
+
+# misc
+/.env*
+/.pnp*
+/.sass-cache
+/connect.lock
+/coverage/
+!.*
+/.eslintcache
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# ember-try
+/.node_modules.ember-try/
+/bower.json.ember-try
+/package.json.ember-try
+
+# sass
+/.sass-cache
+
+# for fastboot apps
+/ssr/node_modules/
+
+# logs
+/npm-debug.log*
+/testem.log
+/yarn-error.log
+
+# misc
+.DS_Store
+
+# kubernetes
+kube.dev.yml
+kube.qa.yml
+kube.production.yml
+
+# Editors
+.vscode
+*.iws
+out/
+.idea/
+*.iml
+modules.xml
+*.ipr
