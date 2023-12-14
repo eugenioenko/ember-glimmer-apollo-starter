@@ -1,5 +1,8 @@
 # ember-glimmer-apollo-starter
 
+> [live version here](https://eugenioenko.github.io/ember-glimmer-apollo-starter/)
+
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
